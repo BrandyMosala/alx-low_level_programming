@@ -1,16 +1,35 @@
 #include "main.h"
 /**
- * string_toupper - a function that changes all lowecases letters of a string
- * @str: pointer
- * Return: n
+ * cap_string - Cpitalized all words of a string
+ * @str: string to be capitalized
+ * Return: a pointer
  */
-char *string_toupper(char *n)
+char *cap_string(char *str)
 {
-int a;
-for (a = 0; n[a] != '\0'; a++)
+int index;
+for (index = 0; str[index]; index++)
 {
-if (n[a] >= 'a' && n[a] <= 'z')
-n[a] = (int)n[a] - 32;
+if (str[index] >= 'a' && str[index] <= 'z')
+{
+if (index == 0 ||
+str[index - 1] == ' ' ||
+str[index - 1] == '\t' ||
+str[index - 1] == '\n' ||
+str[index - 1] == ',' ||
+str[index - 1] == ';' ||
+str[index - 1] == '.' ||
+str[index - 1] == '!' ||
+str[index - 1] == '?' ||
+str[index - 1] == '"' ||
+str[index - 1] == '(' ||
+str[index - 1] == ')' ||
+str[index - 1] == '{' ||
+str[index - 1] == '}')
+{
+str[index] -= 32;
 }
-return (n);
 }
+}
+return (str);
+}
+
