@@ -5,7 +5,7 @@
  * @size: size of array
  * @c: char to assign
  * Description: create array of size and assign char c
- * Retrun: pointer to array, NULL if fail
+ * Return: pointer to array, NULL if fail
  */
 char *create_array(unsigned int size, char c)
 {
