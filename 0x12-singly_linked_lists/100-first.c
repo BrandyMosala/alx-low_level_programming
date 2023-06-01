@@ -1,4 +1,5 @@
 #include <stdio.h>
+void first_sent(void)__attribute__((constructor));
 /**
  * first_sent - a function that  prints a sentence before main
  */
