@@ -4,7 +4,7 @@
  * @head: a pointer
  * Return:  number of nodes in list
  */
-  size_t print_listint_safe(const listint_t *head)
+size_t print_listint_safe(const listint_t *head)
 {
 /*decalre node and index */
 size_t number = 0;
