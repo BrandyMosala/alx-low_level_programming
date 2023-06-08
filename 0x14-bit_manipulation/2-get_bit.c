@@ -2,6 +2,7 @@
 /**
  * get_bit - function that returns a bit
  * @n: the nnumber to search
+ * @index: bit to set to 1
  * Return: value of bit
  */
 int get_bit(unsigned long int n, unsigned int index)
